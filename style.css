@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* Home Section */
+
+.home{
+    background-color:#355C7D;
+    color:white;
+    height:500px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.intro h1{
+    font-size:50px;
+}
+
+.intro p{
+    font-size:24px;
+}
+
+.photo img{
+    width:280px;
+    max-width:100%;
+}
+
+/* About Section */
+
+.about{
+    background-color:#F5F5F5;
+    text-align:center;
+    padding:100px;
+}
+
+.about p{
+    width:60%;
+    margin:auto;
+    line-height:30px;
+}
+
+/* Skills Section */
+
+.skills{
+    background-color:#6C5B7B;
+    color:white;
+    text-align:center;
+    padding:100px;
+}
+
+.skills ul{
+    list-style-position:inside;
+    line-height:35px;
+}
+
+/* Contact Section */
+
+.contact{
+    background-color:#F5F5F5;
+    text-align:center;
+    padding:100px;
+}
+
+input,
+textarea{
+    width:300px;
+    padding:8px;
+    max-width:100%;
+}
+
+input[type="submit"]{
+    background-color:#355C7D;
+    color:white;
+    border:none;
+    padding:10px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px){
+
+    .home{
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .intro h1{
+        font-size: 35px;
+    }
+
+    .intro p{
+        font-size: 18px;
+    }
+
+    .photo img{
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .about,
+    .skills,
+    .contact{
+        padding: 50px 20px;
+    }
+
+    .about p{
+        width: 100%;
+    }
+
+    input,
+    textarea{
+        width: 90%;
+    }
+}
